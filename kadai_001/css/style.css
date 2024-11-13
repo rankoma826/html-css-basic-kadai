@@ -9,47 +9,43 @@ body {
     margin: 0;
 }
 
-p {
-    font-size: 18px;
-}
-
-nav {
-    font-size: 34px;
-}
-
-nav li{
-    margin-left: 20px;
-}
-
 .header-inner {
     display: flex;
     justify-content: center;
-    margin: 20px;
 }
 
-h1 {
-    border: solid 1px #000000;
-    padding: 5px;
+.home {
+    font-size: 34px;
+    border: #000000 1px solid;
+    margin-top: 20px;
     margin-right: 100px;
 }
 
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-.nav-list {
+.menu {
     display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 25px;
+    font-size: 34px;
     list-style: none;
+    margin-top: 20px;
     font-weight: bold;
 }
+
+nav li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
 
 h2 {
     font-size: 34px;
     text-align: center;
+}
+
+img {
+    width: 100%;
 }
 
 .face {
@@ -64,26 +60,29 @@ h2 {
 
 .about-inner {
     display: flex;
-    align-items: center;
     justify-content: center;
 
 }
 
 .content {
     margin: 20px;
+   
 }
 
 .works-inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 0 auto;
     max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+
 }
 
-.works-item {
-    display: inline-block;
-    width: min-content;
-    margin: 10px;
+.item {
+    width: 25%;
+    margin: 0 10px;
+    padding-bottom: 60px;
   }
 
 footer {
@@ -91,14 +90,15 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-    .works-inner {
-        width: 100%;
-        display: block;
+    .item {
         margin-left: 20px;
+        width: 100%;
     }
     
     .about-inner {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+
 
     }
 
@@ -107,7 +107,13 @@ footer {
         font-size: 20px;
     }
     
-    nav {
+    .home {
         font-size: 20px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+    .menu {
+        font-size: 20px;
+        margin-top: 15px;
     }
 }
